@@ -13,7 +13,7 @@ const assertArraysEqual = (actual, expected) => {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   };
 
-  const flatten = (arr) => {
+const flatten = (arr) => {
     let result = []
     for (const e of arr) {
       if (!Array.isArray(e)) {
