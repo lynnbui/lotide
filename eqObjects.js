@@ -1,10 +1,10 @@
-const assertEquals = function(actual, expected) {
+const assertEquals = (actual, expected) => {
     if (actual === expected) return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
   
-const eqArrays = function(actual, expected) {
+const eqArrays = (actual, expected) => {
     if (actual.length !== expected.length) return false;
   
     for (let i = 0; i < actual.length; i++) {
@@ -13,7 +13,7 @@ const eqArrays = function(actual, expected) {
     return true;
 };
   
-const eqObjects = function(object1, object2) {
+const eqObjects = (object1, object2) => {
     const object1Keys = Object.keys(object1);
     const object2Keys = Object.keys(object2);
   
