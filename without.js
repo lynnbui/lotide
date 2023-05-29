@@ -5,13 +5,13 @@ const eqArrays = (actual, expected) => {
       if (actual[i] !== expected[i]) return false;
     }
     return true;
-  };
+};
   
 const assertArraysEqual = (actual, expected) => {
     if (eqArrays(actual, expected)) return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  };
+};
   
 const without = (source, itemsToRemove) => {
     let output = [];
@@ -21,8 +21,8 @@ const without = (source, itemsToRemove) => {
       }
     }
     return output;
-  };
+};
   
-  const words = ["hello", "world", "lighthouse"];
-  without(words, ["lighthouse"]);
-  assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
