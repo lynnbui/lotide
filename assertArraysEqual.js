@@ -7,7 +7,7 @@ const eqArrays = (actual, expected) => {
     return true;
   };
   
-  const assertArraysEqual = (actual, expected) => {
+const assertArraysEqual = (actual, expected) => {
     if (eqArrays(actual, expected)) return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);

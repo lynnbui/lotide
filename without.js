@@ -13,7 +13,7 @@ const eqArrays = (actual, expected) => {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   };
   
-  const without = (source, itemsToRemove) => {
+const without = (source, itemsToRemove) => {
     let output = [];
     for (const item of source) {
       if (!itemsToRemove.includes(item)) {
