@@ -4,7 +4,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   };
 
-  const eqArrays = (actual, expected) => {
+const eqArrays = (actual, expected) => {
     if (actual.length !== expected.length) return false;
   
     for (let i = 0; i < actual.length; i++) {
